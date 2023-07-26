@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/NewsCards/NewsCards";
+import { Typography } from "@material-ui/core";
 
 const alanKey = 'd01ae699de577da2c8d33396ea1334552e956eca572e1d8b807a3e2338fdd0dc/stage';
 
@@ -20,7 +21,7 @@ const App = ()=>{
     },[]);
     return(
         <div>
-            <h1>Hi !!</h1>
+            <Typography variant="h4" color="#1565c0">NewsTalker</Typography>
             <NewsCards articles={newsArticles}/>
         </div>
     );
