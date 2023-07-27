@@ -30,7 +30,18 @@ export default makeStyles({
       },
       title: {
         padding: '0 16px',
+        display: '-webkit-box',
+        '-webkit-line-clamp': 3,
+        '-webkit-box-orient': 'vertical',
+        overflow : "hidden",
+        textOverflow : "ellipsis"
       },
+      description: {
+        display: '-webkit-box', 
+        '-webkit-line-clamp': 2, 
+        '-webkit-box-orient': 'vertical',
+        overflow : "hidden", 
+        textOverflow : "ellipsis"},
       cardActions: {
         padding: '0 16px 8px 16px',
         display: 'flex',
