@@ -1,6 +1,6 @@
 
 # NewsTalker
-A daily news appliication in which you can search news by a AI bot.
+A daily news appliication in which you can search news by an AI bot.
  
 
 
