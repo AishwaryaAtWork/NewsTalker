@@ -22,4 +22,11 @@ export default makeStyles({
         flexDirection: 'column', 
         textAlign: 'center',
       },
-})
+      info: {
+        display: '-webkit-box', 
+        '-webkit-line-clamp': 3, 
+        '-webkit-box-orient': 'vertical',
+        overflow : "hidden", 
+        textOverflow : "ellipsis",
+      },
+});

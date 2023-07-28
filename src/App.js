@@ -4,7 +4,7 @@ import wordsToNumbers from "words-to-numbers";
 import NewsCards from "./components/NewsCards/NewsCards";
 import { Typography } from "@material-ui/core";
 
-const alanKey = 'd01ae699de577da2c8d33396ea1334552e956eca572e1d8b807a3e2338fdd0dc/stage';
+const alanKey = process.env.REACT_APP_ALAN_API_KEY;
 
 const App = ()=>{
     const [newsArticles, setNewsArticles] = useState([]);

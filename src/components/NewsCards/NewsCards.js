@@ -4,7 +4,7 @@ import { Grid, Grow, Typography } from '@material-ui/core';
 import useStyles from './styles';
 
 const infoCards = [
-    { color: '#00838f', title: 'Latest News', text: 'Give me the latest news' },
+    { color: '#016ef2', title: 'Latest News', text: 'Give me the latest news' },
     { color: '#1565c0', title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports, Technology', text: 'Give me the latest Technology news' },
     { color: '#4527a0', title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Donald Trump...', text: 'What\'s up with PlayStation 5' },
     { color: '#283593', title: 'News by Sources', info: "The Hindu, The Times of India, Reuters, Bloomberg, CNN, ESPN...", text: 'Give me the news from CNN' },
@@ -27,7 +27,9 @@ const NewsCards = ({articles, activeArticle}) => {
                                             {infoCard.title.split(" ")[2]}:
                                         </strong>
                                         <br/>
-                                        {infoCard.info}
+                                        <Typography variant='p' className={classes.info}>
+                                            {infoCard.info}
+                                        </Typography>
                                     </Typography>)
                                     : null
                                 }
