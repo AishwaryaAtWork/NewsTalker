@@ -12,6 +12,7 @@ const infoCards = [
 
 const NewsCards = ({articles, activeArticle}) => {
     const classes = useStyles();
+    articles.sort((a,b)=> new Date(b?.publishedAt) - new Date(a?.publishedAt))
 
     if(!articles.length){
         return(
